@@ -1,0 +1,30 @@
+{
+  "name": "tryava",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel": "^6.5.2",
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "sinon": "^1.17.5"
+  },
+  "ava": {
+    "files": [
+      "src/**/*-test.js"
+    ],
+    "require": [
+      "babel-register",
+      "./test/ava-setup.js"
+    ],
+    "babel": "inherit"
+  }
+}
